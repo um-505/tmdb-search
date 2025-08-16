@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDb Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/placeholder_favicon.png">
+</head>
+<body>
+    
+    <header>
+        <h1 id="headingTop">Search for a Movie or TV Show</h1>
+        <button id="reload" class="hidden">Back to Home</button>
+    </header>
+
+    <main>
+        <form id="form">
+            <input type="text" name="query" id="searchBox" autofocus placeholder="Search...">
+            <select name="type" id="searchType">
+                <option value="movie">Movie</option>
+                <option value="tv">TV Show</option>
+            </select>
+            <button type="submit" id="submit">Search</button>
+        </form>
+
+        <hr>
+
+        <div id="resultsContainer">
+            <div id="resultsDiv"></div>
+        </div>
+
+        <div id="favourites">
+            <div id="favouritesHeadingDiv">
+                <h1 id="favouritesHeading">My Favourite Movies</h1>
+                <h4 id="orderDisclaimer">(in no particular order)</h4>
+            </div>
+
+            <div id="myFavouriteMovies">
+                <div class="favouritesRow">
+                    <div id="killBill"></div>                    
+                    <div id="oceansEleven"></div>
+                    <div id="inception"></div>
+                    <div id="se7en"></div>
+                </div>
+                <div class="favouritesRow">
+                    <div id="rogueNation"></div>
+                    <div id="pulpFiction"></div>                    
+                    <div id="bridgeToTerabithia"></div>
+                    <div id="darkKnightRises"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+    <footer>
+        <div id="tmdbAttribute">
+            <p>This product uses the <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDb</a> API but is not endorsed or certified by TMDb.</p>
+            <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" 
+                alt="TMDb Logo" id="tmdbLogo">
+            </a>
+        </div>
+
+        <p class="myID">Designed and Developed by <a class="myID" href="https://uzair-majed.vercel.app/" target="_blank"><b>Uzair Majed</b></a></p>
+    </footer>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

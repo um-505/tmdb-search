@@ -1,0 +1,431 @@
+.hidden {
+    visibility: hidden;
+}
+
+.notHidden {
+    visibility: visible;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #cbf0ff;
+}
+
+header {
+    font-family: Oswald;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.6rem;
+    padding: 0;
+    margin-top: 8rem;
+    margin-bottom: 0;
+    gap: .2rem;
+}
+
+#headingTop {
+    margin: 0;
+    text-align: center;
+}
+
+#reload {
+    width: 18rem;
+    height: 4.8rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    border: solid .1rem #13bcff;
+    border-radius: 2rem;
+    background-color: #51ceff;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+#reload:hover {
+    background-color: #26c2ff;
+}
+
+main {
+    font-family: Roboto;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#searchBox {
+    width: 56rem;
+    height: 4.8rem;
+    padding-left: 1.6rem;
+    font-size: 1.4rem;
+    font-family: Roboto;
+    font-weight: 300;
+    border: solid .1rem rgb(175, 175, 255);
+    border-radius: 2.4rem;
+}
+
+#searchBox:focus {
+    outline: none;
+    font-weight: 400;
+    border: solid .1rem blue;
+    background-color: rgb(242, 242, 255);
+}
+
+#searchBox:hover {
+    background-color: rgb(243, 243, 252);
+}
+
+#searchType {
+    width: 12rem;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: Roboto;
+    font-weight: 300;
+    border: solid .1rem rgb(175, 175, 255);
+    border-radius: 2.4rem;
+    background-color: rgb(251, 251, 255);
+    text-align: center;
+}
+
+#searchType:hover {
+    background-color: rgb(243, 243, 252);    
+}
+
+#searchType:focus {
+    outline: none;
+    font-weight: 400;
+    border: solid .1rem blue;
+}
+
+option {
+    text-align: center;
+    font-family: Roboto;
+}
+
+#submit {
+    width: 12rem;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    font-weight: 500;
+    border: solid .1rem rgb(187, 187, 255);
+    border-radius: 2.4rem;
+    background-color: rgb(102, 102, 255);
+    color: white;
+}
+
+#submit:hover {
+    background-color: rgb(72, 72, 253);
+}
+
+#submit:focus {
+    outline: none;
+    font-weight: 400;
+    border: solid .1rem blue;
+}
+
+hr {
+    margin-top: 12rem;
+    border: none;
+    height: .1rem;
+    background: black;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+#favouritesHeading {
+    font-size: 3.6rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+#favouritesHeadingDiv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#orderDisclaimer {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+#favourites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 3.2rem;
+}
+
+#myFavouriteMovies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+}
+
+.favouritesRow {
+    display: flex;
+    flex-direction: row;
+    gap: 6.8rem;
+}
+
+.favouritesTitles {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.favouritesImages {
+    max-width: 30rem;
+    height: auto;
+    border-radius: 1.2rem;
+}
+
+.favouritesDiv {
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    align-items: center;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+#resultsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 6rem;
+}
+
+.searchResultsListItem {
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+}
+
+.searchResultsImage {
+    width: 28rem;
+    height: auto;
+    border-radius: 1.2rem;
+}
+
+.searchResultsTitle {
+    font-size: 3.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.searchResultsDate {
+    font-size: 2.4rem;
+    color: rgb(58, 58, 58);
+}
+
+.searchResultsOverview {
+    font-size: 1.6rem;
+    color: black;
+    max-width: 100rem;
+}
+
+footer {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+#tmdbAttribute {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.myID {
+    font-family: Oswald;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: black;
+}
+
+#tmdbLogo {
+    width: 6rem;
+    height: auto;
+}
+
+@media (max-width:1500px) {
+    .favouritesImages {
+        max-width: 20rem;
+    }
+    .favouritesTitles {
+        max-width: 20rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:1080px) {
+    .favouritesRow{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+    .favouritesImages {
+        max-width: 32rem;
+    }
+    .searchResultsImage {
+        width: 20rem;
+    }
+}
+
+@media (max-width:910px) {
+    html {
+        font-size: 75%;
+    }
+    header {
+        font-size: 2.4rem;
+        margin-top: 4rem;
+    }
+    #form {
+        flex-direction: column;
+        align-items: center;
+    }
+    #searchBox {
+        width: 36rem;
+        height: 4rem;
+    }
+    #searchType {
+        width: 36rem;
+    }
+    #submit {
+        width: 36rem;
+    }
+    #tmdbAttribute {
+        flex-direction: column;
+    }
+    .favouritesImages {
+        max-width: 26rem;
+    }
+    #reload {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    hr {
+        margin-top: 6rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #favourites {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:680px) {
+    html {
+        padding: 1rem;
+    }
+    header {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .favouritesRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .favouritesImages {
+        max-width: 24rem;
+    }
+    #searchBox {
+        width: 28rem;
+    }
+    #searchType {
+        width: 28rem;
+    }
+    #submit {
+        width: 28rem;
+    }
+    .searchResultsListItem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .searchResultsImage {
+        width: 28rem;
+    }
+    .searchResultsOverview {
+        max-width: 44rem;
+    }
+    #favourites {
+        margin-top: .8rem;
+    }
+    hr {
+        margin-top: 4rem;
+    }
+    .favouritesTitles {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:400px) {
+    #searchBox {
+        width: 20rem;
+    }
+    #searchType {
+        width: 20rem;
+    }
+    #submit {
+        width: 20rem;
+    }
+    hr {
+        margin-top: 4rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:340px) {
+    .favouritesImages {
+        max-width: 20rem;
+    }
+    .searchResultsImage {
+        width: 20rem;
+    }
+    .searchResultsOverview {
+        max-width: 20rem;
+    }
+}
