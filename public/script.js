@@ -14,15 +14,15 @@ const getKillBill = async () => {
     `;
 };
 
-const getBridgeToTerabithia = async () => {
-    const bridgeToTerabithia = document.querySelector("#bridgeToTerabithia");
-    bridgeToTerabithia.innerHTML = "";
-    const id = 1265;
+const getKillBill2 = async () => {
+    const killBill2 = document.querySelector("#killBill2");
+    killBill2.innerHTML = "";
+    const id = 393;
     const res = await fetch(`/movie/${id}`);
     const data = await res.json();
     const imgURL = `https://image.tmdb.org/t/p/original${data.poster_path}`;
 
-    bridgeToTerabithia.innerHTML += `
+    killBill2.innerHTML += `
     <div class="favouritesDiv">
         <img src="${imgURL}" alt=${data.title} class="favouritesImages">
         <h3 class="favouritesTitles"><a class="favouritesTitles" href="https://www.themoviedb.org/movie/${data.id}" target="_blank">${data.title}</a</h3>
@@ -127,7 +127,7 @@ const getOceansEleven = async () => {
 };
 
 getKillBill();
-getBridgeToTerabithia();
+getKillBill2();
 getRogueNation();
 getSe7en();
 getPulpFiction();
